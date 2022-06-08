@@ -1,5 +1,3 @@
-// 10進数を2進数に変換
-
 package main
 
 import (
