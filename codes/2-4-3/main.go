@@ -20,7 +20,7 @@ func main() {
 
 	var cnt int32
 	for i := 1; i <= N; i++ {
-		for j:=1; j<=N; j++ {
+		for j := 1; j <= N; j++ {
 			if (i + j <= S) { cnt++ }
 		}
 	}
