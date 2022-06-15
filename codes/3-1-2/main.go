@@ -12,10 +12,10 @@ func main() {
 	sc.Scan()
 	val, _ := strconv.Atoi(sc.Text())
 
-	N := int32(val)
+	N := val
 	Answer := false
 
-	for i := int32(2); i * i <= N; i++ {
+	for i := 2; i * i <= N; i++ {
 		if N % i == 0 {
 			Answer = true
 		}

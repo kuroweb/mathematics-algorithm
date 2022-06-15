@@ -12,9 +12,9 @@ func main() {
 
 	val, _ := strconv.Atoi(sc.Text())
 
-	N := int32(val)
+	N := val
 
-	for i := int32(1); i * i <= N; i++ {
+	for i := 1; i * i <= N; i++ {
 		if N % i == 0 {
 			fmt.Println(i);
 			if i != N / i {

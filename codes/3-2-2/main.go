@@ -10,11 +10,11 @@ import (
 func main() {
 	sc := bufio.NewScanner(os.Stdin)
 
-	var ary [2]int64
+	var ary [2]int
 	for i := 0; i < 2; i++ {
 		sc.Scan()
 		val, _ := strconv.Atoi(sc.Text())
-		ary[i] = int64(val)
+		ary[i] = val
 	}
 
 	A, B := ary[0], ary[1]
