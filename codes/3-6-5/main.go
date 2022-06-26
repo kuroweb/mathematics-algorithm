@@ -1,18 +1,20 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
+	"strconv"
 )
 
 var N int
 var A []int
 
 func main() {
-	// sc := bufio.NewScanner(os.Stdin)
-	// sc.Scan()
+	sc := bufio.NewScanner(os.Stdin)
+	sc.Scan()
 
-	// N, _ := strconv.Atoi(sc.Text())
-	N = 5
+	N, _ := strconv.Atoi(sc.Text())
 
 	A = make([]int, N + 1)
 	for i := 1; i <= N; i++ {
